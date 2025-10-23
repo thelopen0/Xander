@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>XANDER</title>
+</head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <h1>XANDER GYM <span class="txtRojo">SUCRE</span></h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">iNICIO</a>
+                <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
+                <a href="#servicios" onclick="seleccionar()">Servicios</a>
+                <a href="#comodidades" onclick="seleccionar()">Planes</a>
+                <a href="#galeria" onclick="seleccionar()">instalaciones</a>
+             
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+            </nav>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100057727380235"><i class="fa-brands fa-facebook-f"></i></a>
+              
+                <a href="https://www.instagram.com/gymxander/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>                
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-seccion">
+            <div class="info">
+                <h2>TU MEJOR VERSIÓN <span class="txtRojo">EMPIEZA AQUI</span></h2>
+                <p>Más que un gimnasio, tu espacio de superación</p>
+                <a href="#nosotros" class="btn-mas">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+                </a>
+            </div>
+            <div class="opciones">
+                <div class="opcion">
+                    ESTÉTICA
+                </div>
+                <div class="opcion">
+                    FUERZA
+                </div>
+                <div class="opcion">
+                    MUSCULACIÓN
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+        <div class="fila">
+            <div class="col">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="col">
+                <div class="contenedor-titulo">
+                    <div class="numero">
+                        NOSOTROS
+                    </div>
+                    <div class="info">
+                        <span class="frase"></span>
+                        <h2> </h2>
+                    </div>
+                </div>
+                <p class="p-especial">
+                </p>
+                <p>Experimenta el entrenamiento de calidad en nuestras instalaciones
+                     de musculación. Logra tus 
+                    objetivos en un ambiente motivador y con el apoyo de expertos en fitness
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="fila-nosotros">
+            <div class="col1">
+                <span class="frase">
+                    <span class="txtRojo">ENTRENA</span> DIFERENTE
+                </span>
+                <h2>ENTRENA <span class="txtRojo">CON NOSOTROS!</span></h2>
+            </div>
+            <div class="col2">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-titulo">
+                        <div class="numero">
+                            SERVICIOS
+                        </div>
+                        <div class="info">
+                            <span class="frase"></span>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <p class="p-especial">
+
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="img/" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="info-servicios">
+            <table>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-person-walking"></i>
+                        <h3><span class="txtRojo">Musculacón </span></h3>
+                        <p>Zona especializada de máquinas para trabajo muscular. 
+                            Diseñada para entrenamiento de fuerza, 
+                            hipertrofia y definición muscular con la máxima seguridad y eficiencia.
+                        </p>
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <h3><span class="txtRojo">Cardio </span> </h3>
+                        <p>ÁEquipos cardiovasculares: 
+                            Caminadora, elípticas de resistencia variable y 
+                            bicicletas spinner para entrenamientos de alta intensidad.</p>
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-mitten"></i>
+                        <h3><span class="txtRojo">Asesoramiento Nutricional </span></h3>
+                        <p>Planificación alimentaria individualizada. 
+                            Complementa tu entrenamiento con estrategias nutricionales 
+                            específicas para ganar masa muscular o definir tu físico.</p>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- SECCION COMODIDADES -->
+    <section id="comodidades" class="comodidades">
+        <div class="fila">
+            <div class="col">
+                <img src="img/reloj.png" alt="">
+            </div>
+            <div class="col">
+                <div class="contenedor-titulo">
+                    <div class="numero">
+                        PLANES
+                    </div>
+                    <div class="info">
+                        <span class="frase"></span>
+                        <h2></h2>
+                    </div>
+                </div>
+                <p class="p-especial">Elige el plan que se adapte a tus objetivos y disponibilidad. </p>
+                <ul>
+                    <li><span>PLAN BÁSICO</span> <br>- Acceso ilimitado a zona de musculación.<br>
+                                                - Elipticas y Bicicletas.
+                                                <br>- Asesoramiento Nutricional.
+                                                <br>- Lunes a Domingo.
+                                                <br> - Precio: 100 bs / Mes
+                        </li>
+                    <li><span>PLAN BÁSICO (3 DÍAS SEMANA)</span> <br>-  Acceso ilimitado a zona de musculación.<br>
+                                                - Elipticas y Bicicletas.
+                                                <br>- 3 días por semana.
+                                                <br> - Precio: 70 bs / Mes</li>
+                    <li><span>PLAN COMPLETO </span> <br>- Acceso completo a todas las áreas.
+                                                    
+                                                <br>- Lunes a Domingo.
+                                                <br>- Asesoramiento Nutricional.
+                                                <br> - Precio: 140 bs / Mes</li>
+                    <li><span>PLAN COMPLETO (3 DÍAS SEMANA)</span><br> - Acceso completo a todas las áreas.
+                                                    
+                                                <br>- Lunes a Domingo.
+                                                <br>- Asesoramiento Nutricional.
+                                                <br>- 3 días por semana.
+                                                <br> - Precio: 90 bs / Mes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION GALERIA -->
+    <section class="galeria" id="galeria">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">
+                    INSTALACIONES
+                </div>
+                <div class="info">
+                    <span class="frase"></span>
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/ff1.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="img/ff1.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="img/ff1.jpg" alt="">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/ff1.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="img/ff1.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="img/ff1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">
+                    CONTACTO
+                </div>
+                <div class="info">
+                    <span class="frase"></span>
+                    <h2></h2>
+                </div>
+            </div>
+           
+            <div class="fila-datos">
+                <div class="col">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Av. del maestro # 498,<br>Ciudad Sucre, Bolivia
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-phone"></i>
+                    +591 73477623
+                </div>
+                <div class="col">
+                    <i class="fa-regular fa-clock"></i>
+                    Lunes a Viernes, 6:00h - 23:00h<br>
+                    Sábado, 8:00h - 22:00h<br>
+                    Domingo,  8:00h - 12:00h
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="info">
+            
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100057727380235">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+               
+                <a href="https://www.instagram.com/gymxander/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
