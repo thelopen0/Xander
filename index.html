@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
     <title>XANDER</title>
 </head>
 <body>
-    <!-- MENU -->
+ 
     <div class="contenedor-header">
         <header>
             <h1>XANDER GYM <span class="txtRojo">SUCRE</span></h1>
+
+           
             <nav id="nav">
                 <a href="#inicio" onclick="seleccionar()">iNICIO</a>
                 <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
                 <a href="#servicios" onclick="seleccionar()">Servicios</a>
                 <a href="#comodidades" onclick="seleccionar()">Planes</a>
                 <a href="#galeria" onclick="seleccionar()">instalaciones</a>
-             
                 <a href="#contacto" onclick="seleccionar()">Contacto</a>
             </nav>
+
+         
             <div class="redes">
                 <a href="https://www.facebook.com/profile.php?id=100057727380235"><i class="fa-brands fa-facebook-f"></i></a>
-              
                 <a href="https://www.instagram.com/gymxander/"><i class="fa-brands fa-square-instagram"></i></a>
             </div>
-            <!-- Icono del menu responsive -->
+
+           
             <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
-            </div>                
+            </div>
+
+            <select id="menu-mobile" onchange="cambiarSeccion()" style="display:none;">
+                <option value="#inicio">Inicio</option>
+                <option value="#nosotros">Nosotros</option>
+                <option value="#servicios">Servicios</option>
+                <option value="#comodidades">Planes</option>
+                <option value="#galeria">Instalaciones</option>
+                <option value="#contacto">Contacto</option>
+            </select>
+
         </header>
     </div>
 
-    <!-- SECCION INICIO -->
+   
     <section id="inicio" class="inicio">
         <div class="contenido-seccion">
             <div class="info">
@@ -45,21 +59,14 @@
                 </a>
             </div>
             <div class="opciones">
-                <div class="opcion">
-                    ESTÉTICA
-                </div>
-                <div class="opcion">
-                    FUERZA
-                </div>
-                <div class="opcion">
-                    MUSCULACIÓN
-                </div>
-               
+                <div class="opcion">ESTÉTICA</div>
+                <div class="opcion">FUERZA</div>
+                <div class="opcion">MUSCULACIÓN</div>
             </div>
         </div>
     </section>
 
-    <!-- SECCION NOSOTROS -->
+   
     <section id="nosotros" class="nosotros">
         <div class="fila">
             <div class="col">
@@ -67,16 +74,13 @@
             </div>
             <div class="col">
                 <div class="contenedor-titulo">
-                    <div class="numero">
-                        NOSOTROS
-                    </div>
+                    <div class="numero">NOSOTROS</div>
                     <div class="info">
                         <span class="frase"></span>
                         <h2> </h2>
                     </div>
                 </div>
-                <p class="p-especial">
-                </p>
+                <p class="p-especial"></p>
                 <p>Experimenta el entrenamiento de calidad en nuestras instalaciones
                      de musculación. Logra tus 
                     objetivos en un ambiente motivador y con el apoyo de expertos en fitness
@@ -86,37 +90,27 @@
         <hr>
         <div class="fila-nosotros">
             <div class="col1">
-                <span class="frase">
-                    <span class="txtRojo">ENTRENA</span> DIFERENTE
-                </span>
+                <span class="frase"><span class="txtRojo">ENTRENA</span> DIFERENTE</span>
                 <h2>ENTRENA <span class="txtRojo">CON NOSOTROS!</span></h2>
             </div>
-            <div class="col2">
-                
-            </div>
+            <div class="col2"></div>
         </div>
     </section>
 
-    <!-- SECCION SERVICIOS -->
+  
     <section class="servicios" id="servicios">
         <div class="contenido-seccion">
             <div class="fila">
                 <div class="col">
                     <div class="contenedor-titulo">
-                        <div class="numero">
-                            SERVICIOS
-                        </div>
+                        <div class="numero">SERVICIOS</div>
                         <div class="info">
                             <span class="frase"></span>
                             <h2></h2>
                         </div>
                     </div>
-                    <p class="p-especial">
-
-                    </p>
-                    <p>
-
-                    </p>
+                    <p class="p-especial"></p>
+                    <p></p>
                 </div>
                 <div class="col">
                     <img src="img/" alt="">
@@ -137,7 +131,7 @@
                     <td>
                         <i class="fa-solid fa-dumbbell"></i>
                         <h3><span class="txtRojo">Cardio </span> </h3>
-                        <p>ÁEquipos cardiovasculares: 
+                        <p>Equipos cardiovasculares: 
                             Caminadora, elípticas de resistencia variable y 
                             bicicletas spinner para entrenamientos de alta intensidad.</p>
                     </td>
@@ -149,15 +143,11 @@
                             específicas para ganar masa muscular o definir tu físico.</p>
                     </td>
                 </tr>
-                <tr>
-                    
-                    
-                </tr>
             </table>
         </div>
     </section>
 
-    <!-- SECCION COMODIDADES -->
+    
     <section id="comodidades" class="comodidades">
         <div class="fila">
             <div class="col">
@@ -165,9 +155,7 @@
             </div>
             <div class="col">
                 <div class="contenedor-titulo">
-                    <div class="numero">
-                        PLANES
-                    </div>
+                    <div class="numero">PLANES</div>
                     <div class="info">
                         <span class="frase"></span>
                         <h2></h2>
@@ -201,58 +189,35 @@
         </div>
     </section>
 
-    <!-- SECCION GALERIA -->
+    
     <section class="galeria" id="galeria">
         <div class="contenido-seccion">
             <div class="contenedor-titulo">
-                <div class="numero">
-                    INSTALACIONES
-                </div>
-                <div class="info">
-                    <span class="frase"></span>
-                    <h2></h2>
-                </div>
+                <div class="numero">INSTALACIONES</div>
+                <div class="info"><span class="frase"></span><h2></h2></div>
+            </div>
+
+            <div class="fila">
+                <div class="col"><img src="img/ff1.jpg" alt=""></div>
+                <div class="col"><img src="img/ff1.jpg" alt=""></div>
+                <div class="col"><img src="img/ff1.jpg" alt=""></div>
             </div>
             <div class="fila">
-                <div class="col">
-                    <img src="img/ff1.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img src="img/ff1.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img src="img/ff1.jpg" alt="">
-                </div>
-            </div>
-            <div class="fila">
-                <div class="col">
-                    <img src="img/ff1.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img src="img/ff1.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img src="img/ff1.jpg" alt="">
-                </div>
+                <div class="col"><img src="img/ff1.jpg" alt=""></div>
+                <div class="col"><img src="img/ff1.jpg" alt=""></div>
+                <div class="col"><img src="img/ff1.jpg" alt=""></div>
             </div>
         </div>
     </section>
-    
-    
 
-    <!-- SECCION CONTACTO -->
+    
     <section class="contacto" id="contacto">
         <div class="contenido-seccion">
             <div class="contenedor-titulo">
-                <div class="numero">
-                    CONTACTO
-                </div>
-                <div class="info">
-                    <span class="frase"></span>
-                    <h2></h2>
-                </div>
+                <div class="numero">CONTACTO</div>
+                <div class="info"><span class="frase"></span><h2></h2></div>
             </div>
-           
+
             <div class="fila-datos">
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
@@ -270,24 +235,18 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <footer>
         <div class="info">
-            
             <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=100057727380235">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-               
-                <a href="https://www.instagram.com/gymxander/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                
+                <a href="https://www.facebook.com/profile.php?id=100057727380235"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/gymxander/"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     </footer>
+
+
     <script src="app.js"></script>
 </body>
 </html>
