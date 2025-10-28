@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body{
     background-color: #dde1e9;
 }
 
-/* MENU */
+/* ENCABEZADO - MENU */
 
 .contenedor-header{
     width: 100%;
@@ -552,31 +552,101 @@ footer .info a{
     margin: 0 15px;
 }
 
-/* RESPONSIVE */
 
 section{
-    min-height:100vh;
-    overflow:hidden;
+    min-height: 100vh; 
+    overflow: hidden;
 }
 
 
-@media only screen and (max-width:900px){
-    header nav{ display:none !important;}
-    .nav-responsive{ display:none !important;}
-    header .redes{ display:none;}
+/* RESPONSIVE */
 
+@media only screen and (max-width: 900px) {
+    header nav{
+       
+        display: none !important;
+    }
+    header .redes{
+        display: none;
+    }
+    .nav-responsive{
+       
+        display: none !important;
+    }
+
+   
     #menu-mobile{
-        display:block !important;
+        display:block !important; 
         margin:auto;
+        margin-top:10px;
         width:70%;
+        font-size:18px;
         padding:8px;
         border-radius:8px;
         background:#151623;
         color:white;
-        font-size:18px;
-        margin-top:8px;
         text-align:center;
+    }
+
+    
+    .inicio .opciones{ display:none; }
+    .nosotros .fila{ display:block; }
+    .nosotros .fila .col{ width:100%; margin:auto; }
+    .nosotros .fila .col img{ max-width:200px; display:block; margin:auto; }
+    .servicios .contenido-seccion .fila{ display:block; }
+    .servicios .contenido-seccion .fila .col{ width:100%; }
+    .comodidades .fila{ display:block; }
+    .comodidades .fila .col{ width:100%; }
+    .comodidades .fila .col img{ max-width:200px; }
+    .equipo .fila{ display:block; }
+    .equipo .fila .col{ width:100%; margin-bottom:20px; }
+    .equipo .fila .col img{ max-height:200px; }
+    .equipo .fila .info{ max-width:250px; margin:auto; }
+    .contacto .fila{ display:block; }
+    .contacto .fila .col{ width:100%; margin-bottom:20px; }
+    .contacto .fila-datos{ display:block; }
+    .contacto .fila-datos .col{ margin-bottom:20px; }
+    footer .info{ display:block; text-align:center; }
+    footer .info p{ margin-bottom:10px; }
+}
+
+
+/* === MEJORA 1: Scroll horizontal en móvil === */
+@media only screen and (max-width: 900px) {
+    section {
+        overflow-x: auto;  
+        overflow-y: auto;  
     }
 }
 
 
+.galeria .slider {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+}
+
+.galeria .slider img {
+    width: 80vw; 
+    height: auto;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    object-fit: cover;
+}
+
+
+.galeria .slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+    section {
+        overflow-x: auto; 
+        overflow-y: auto; 
+        width: 100%;
+    }
+}
